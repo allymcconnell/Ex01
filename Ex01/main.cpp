@@ -12,9 +12,11 @@
 using namespace std;
 
 int ex01();
+int ex02();
 
 int main() {
     ex01();
+    ex02();
 }
 
 int ex01()
@@ -50,13 +52,20 @@ int ex01()
         cout << "Box is divisible";
     }
         
-        
-        
-        
     
     
     
     
+    
+    
+    
+    return 0;
+
     
 }
 
+
+int ex02()
+{
+    return 0;
+}
