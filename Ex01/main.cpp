@@ -6,6 +6,15 @@
 //  Copyright © 2016 Ally McConnell. All rights reserved.
 //
 
+//Results:
+//  EX01_01: 20/20
+//  EX01_02: 20/20
+//  EX01_03: 18/20
+//  EX01_04: 13/20
+//  EX01_05: 13/20
+//-----------------
+//  TOTAL: 84/100
+
 // ex01
 // a) CPU
 // b) RAM
@@ -99,6 +108,7 @@ int ex03()
     cout << "The diagonal across the square is: ";
     cout << diagonalAcross;
     
+    //PT: don't return 0 until the end of the function. -1
     return 0;
     
     //section B
@@ -129,7 +139,7 @@ int ex03()
     return 0;
     
     //section E
-    std::string a;
+    std::string a; //PT: string a = "";  -1
     if (a.empty())
     {
         
@@ -157,12 +167,17 @@ int ex04()
         cout << "Enter number between 1 and 10: ";
         cin >> number;
     }
+    //PT Again, don't return 0 until the end of the function. -1
     return 0;
     
     //section B
     cin >> number;
     int result = 0;
     return result;
+    //PT -3
+    // for (int i=0; i<number, i++)
+    //    cout << i << "^3 = " << (i*i*i) << endl;
+    //END
     for (int number);
     {
         result = result * 3;
@@ -172,6 +187,10 @@ int ex04()
     return 0;
     
     //section C
+    //PT -3
+    //for (int i=0; i<number; i++)
+    //  cout << "*";
+    //END
     cin >> number;
     do{
         number++;
@@ -206,7 +225,7 @@ int ex04()
     //section F
     int a = rand();
     int b = rand();
-    
+    //PT call a function to add these.
     return a + b;
     
     //section G
@@ -219,12 +238,19 @@ int ex04()
     
 }
 
+//PT: need to implement this -3
 void printArray(int list[], int arraySize);
+//{
+//   for (int i=0; i<arraySize; i++)
+//      cout << list[i] << ", ";
+//}
+}
 
 int ex05()
 
 {
     //section A
+    //PT: use a loop and an array. -1
     int num1;
     cout << "Enter number 1: ";
     cin >> num1;
@@ -256,6 +282,7 @@ int ex05()
     cout << "Enter number 2: ";
     cin >> number2;
     
+    //PT: Functions. -3
     sum = number1 + number2;
     cout << "The sum is " << sum << endl;
     
